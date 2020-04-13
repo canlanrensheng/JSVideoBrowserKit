@@ -1,0 +1,22 @@
+{
+  "name": "JSVideoBrowserKit",
+  "version": "0.1.0",
+  "summary": "A short description of JSVideoBrowserKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/canlanrensheng/JSVideoBrowserKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "canlanrensheng": "jinshan.zhang@51ysscw.com"
+  },
+  "source": {
+    "git": "https://github.com/canlanrensheng/JSVideoBrowserKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "JSVideoBrowserKit/Classes/**/*"
+}

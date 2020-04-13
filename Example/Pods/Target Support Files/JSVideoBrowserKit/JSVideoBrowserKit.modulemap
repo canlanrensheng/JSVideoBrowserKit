@@ -1,0 +1,6 @@
+framework module JSVideoBrowserKit {
+  umbrella header "JSVideoBrowserKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

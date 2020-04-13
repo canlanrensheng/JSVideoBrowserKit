@@ -1,0 +1,16 @@
+PODS:
+  - JSVideoBrowserKit (0.1.0)
+
+DEPENDENCIES:
+  - JSVideoBrowserKit (from `../`)
+
+EXTERNAL SOURCES:
+  JSVideoBrowserKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JSVideoBrowserKit: 4ddfc699af7e52da77f89b70d495cbfb87e1abca
+
+PODFILE CHECKSUM: 196abe5218b84f54fd6caef4888a90c557ca6199
+
+COCOAPODS: 1.8.4
