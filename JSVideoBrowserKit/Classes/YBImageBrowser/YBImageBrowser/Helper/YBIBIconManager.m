@@ -106,30 +106,54 @@ NSBundle *YBIBVideoBundle(void) {
     self = [super init];
     if (self) {
         _loadingImage = ^UIImage * _Nullable{
-            return [UIImage ybib_imageNamed:@"ybib_loading" bundle:YBIBDefaultBundle()];
+            NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
+            NSString *path = [currentBundle pathForResource:@"ybib_loading@2x.png" ofType:nil];
+            return [UIImage imageWithContentsOfFile:path];
+//            return [UIImage ybib_imageNamed:@"ybib_loading" bundle:YBIBDefaultBundle()];
         };
         
         _toolSaveImage = ^UIImage * _Nullable{
-            return [UIImage ybib_imageNamed:@"ybib_save" bundle:YBIBDefaultBundle()];
+//            return [UIImage ybib_imageNamed:@"ybib_save" bundle:YBIBDefaultBundle()];
+            NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
+            NSString *path = [currentBundle pathForResource:@"ybib_save@2x.png" ofType:nil];
+            return [UIImage imageWithContentsOfFile:path];
         };
         _toolMoreImage = ^UIImage * _Nullable{
-            return [UIImage ybib_imageNamed:@"ybib_more" bundle:YBIBDefaultBundle()];
+//            return [UIImage ybib_imageNamed:@"ybib_more" bundle:YBIBDefaultBundle()];
+            NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
+            NSString *path = [currentBundle pathForResource:@"ybib_more@2x.png" ofType:nil];
+            return [UIImage imageWithContentsOfFile:path];
         };
         
         _videoPlayImage = ^UIImage * _Nullable{
-            return [UIImage ybib_imageNamed:@"ybib_play" bundle:YBIBVideoBundle()];
+            NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
+            NSString *path = [currentBundle pathForResource:@"ybib_play@2x.png" ofType:nil];
+            return [UIImage imageWithContentsOfFile:path];
+//            return [UIImage ybib_imageNamed:@"ybib_play" bundle:YBIBVideoBundle()];
         };
         _videoPauseImage = ^UIImage * _Nullable{
-            return [UIImage ybib_imageNamed:@"ybib_pause" bundle:YBIBVideoBundle()];
+//            return [UIImage ybib_imageNamed:@"ybib_pause" bundle:YBIBVideoBundle()];
+            NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
+            NSString *path = [currentBundle pathForResource:@"ybib_pause@2x.png" ofType:nil];
+            return [UIImage imageWithContentsOfFile:path];
         };
         _videoCancelImage = ^UIImage * _Nullable{
-            return [UIImage ybib_imageNamed:@"ybib_cancel" bundle:YBIBVideoBundle()];
+//            return [UIImage ybib_imageNamed:@"ybib_cancel" bundle:YBIBVideoBundle()];
+            NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
+            NSString *path = [currentBundle pathForResource:@"ybib_cancel@2x.png" ofType:nil];
+            return [UIImage imageWithContentsOfFile:path];
         };
         _videoBigPlayImage = ^UIImage * _Nullable{
-            return [UIImage ybib_imageNamed:@"ybib_bigPlay" bundle:YBIBVideoBundle()];
+//            return [UIImage ybib_imageNamed:@"ybib_bigPlay" bundle:YBIBVideoBundle()];
+            NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
+            NSString *path = [currentBundle pathForResource:@"ybib_bigPlay@2x.png" ofType:nil];
+            return [UIImage imageWithContentsOfFile:path];
         };
         _videoDragCircleImage = ^UIImage * _Nullable{
-            return [UIImage ybib_imageNamed:@"ybib_circlePoint" bundle:YBIBVideoBundle()];
+//            return [UIImage ybib_imageNamed:@"ybib_circlePoint" bundle:YBIBVideoBundle()];
+            NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
+            NSString *path = [currentBundle pathForResource:@"ybib_circlePoint@2x.png" ofType:nil];
+            return [UIImage imageWithContentsOfFile:path];
         };
     }
     return self;
