@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JSVideoBrowserKit'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'A short description of JSVideoBrowserKit.'
 
 # This description is used to generate tags and improve search results.
@@ -32,11 +32,8 @@ Pod::Spec.new do |s|
 
   s.source_files = 'JSVideoBrowserKit/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'JSVideoBrowserKit' => ['JSVideoBrowserKit/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.resource_bundles = {
+     'JSVideoBrowserKit' => ['JSVideoBrowserKit/Assets/*.png']
+  }
   s.dependency 'YYImage'
 end
